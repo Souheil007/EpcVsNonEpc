@@ -106,7 +106,7 @@ Overall similarity score: 0.86
 Install dependencies using:
 
 ```bash
-pip install torch transformers scikit-learn langchain_text_splitters mistralai python-dotenv
+pip install -r requirements.txt
 ```
 
 ## Notes
