@@ -6,23 +6,23 @@ This project allows you to **compare two documents (PDFs or images)** using OCR 
 
 ## Approach
 
-In order to access our pdfs/images we have to acced to their content and i proceeded that by using ocr exactly mistral ocr because it excels at understanding complex layouts and free to use,
-after that we obtain a markdown file which gives us an insight about the two files structure and we havee to compare them , 
-when comparing i thought about chunking both documents using heading/tables and retrieving the chunks embedding and calculating smeentic similarity score of them within the same part of chunks
-and by that we obtain a sementic similarity score and also we have to calculate a structural score by comparing headings, number of tables , row names and header names
+* In order to access our pdfs/images we have to acced to their content and i proceeded that by using ocr exactly mistral ocr because it excels at understanding complex layouts and free to use,
+* After that we obtain a markdown file which gives us an insight about the two files structure and we havee to compare them , 
+* when comparing i thought about chunking both documents using heading/tables and retrieving the chunks embedding and calculating smeentic similarity score of them within the same part of chunks
+* and by that we obtain a sementic similarity score and also we have to calculate a structural score by comparing headings, number of tables , row names and header names
 
 ## Drawbacks
 
-mistral ocr eventhought it exceed in its field of ocring complex documents may fail in retrieving the layout of some documents
-by calculating sementic similarity score, some fields which are the filling of that epc may not reveal the actual layout and may give a bad score
-eventhough we are calculating structural score we are heavily relying on mistral output
+* mistral ocr eventhought it exceed in its field of ocring complex documents may fail in retrieving the layout of some documents
+* by calculating sementic similarity score, some fields which are the filling of that epc may not reveal the actual layout and may give a bad score
+* eventhough we are calculating structural score we are heavily relying on mistral output
 
 ## vision
 
-docling is a promising library that to get in depth of it in order to see what is capable of 
-we can try using vlms and see their results since gemini 2.5 pro is one of the leading vlms now but it is pay to use it 
-We use an llm and ask some set of questions to it and compare responses of both files in order to get the score
-We can use llm as a judge but it is a really weak solution
+* docling is a promising library that to get in depth of it in order to see what is capable of 
+* we can try using vlms and see their results since gemini 2.5 pro is one of the leading vlms now but it is pay to use it 
+* We use an llm and ask some set of questions to it and compare responses of both files in order to get the score
+* We can use llm as a judge but it is a really weak solution
 
 ## Features
 
